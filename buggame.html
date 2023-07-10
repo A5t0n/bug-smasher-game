@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bug Smasher</title>
+  <style>
+    canvas {
+      border: 1px solid #000;
+	  background-image: url(http://publicdomainpictures.net/pictures/70000/velka/grass-texture-background-green.jpg);
+    }
+	#gameCanvas{
+		cursor: none;
+	}
+	#customCursor{
+		position: absolute;
+		display: none;
+		pointer-events: none;
+	}
+
+	button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+      border-radius: 7px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="gameCanvas" width="1500" height="800"></canvas><br>
+  <button onclick="resetScore()">Reset Score</button>
+  <button onclick="resetSpeed()">Reset Speed</button>
+
+  <img id="customCursor" src="https://eplaza.waltonbd.com/image/data/Home%20Appliances/Mosquito%20Bat/WMB-K03/WMB-K03-(3833)---1.png"  width="70" height="70">
+  <script src="gamescript.js"></script>
+</body>
+</html>
